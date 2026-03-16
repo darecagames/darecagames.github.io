@@ -14,7 +14,7 @@ const translations = {
         "stat_indie": "Indie Dev",
         "stat_passion": "Pasión",
         "games_title": "Juegos",
-        "game_status": "Coming Soon",
+        "game_status": "Próximamente",
         "btn_steam": "Añadir a Wishlist en Steam",
         "contact_title": "Contacto",
         "contact_subtitle": "¿Interesado en lo que hacemos? Suscríbete a nuestra newsletter para enterarte de todas las novedades, o envíanos un email.",
