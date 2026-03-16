@@ -9,7 +9,7 @@ const translations = {
         "btn_view_games": "Ver Juegos <i class='bx bx-right-arrow-alt'></i>",
         "btn_learn_more": "Conoce Más",
         "about_title": "Sobre Mí",
-        "about_text": "Soy un desarrollador independiente dedicado a dar vida a mis propias ideas. Dareca Games es mi cuartel general, donde diseño, programo y experimento con mecánicas para crear experiencias únicas. Mi objetivo es hacer los juegos que a mí me gustaría jugar.",
+        "about_text": "Soy un desarrollador independiente dedicado a dar vida a mis propias ideas. Dareca Games es mi cuartel general, donde diseño, programo y experimento con mecánicas para crear experiencias únicas. Mi objetivo es hacer juegos a los que a mí me gustaría jugar.",
         "stat_code": "100% Código",
         "stat_indie": "Indie Dev",
         "stat_passion": "Pasión",
