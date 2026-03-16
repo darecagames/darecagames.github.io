@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dareca Games</title>
+    <meta name="description" content="Dareca Games: Un desarrollador, infinitas posibilidades.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Outfit:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <!-- Boxicons for icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <!-- Background Elements for Premium Look -->
+    <div class="bg-glow bg-glow-1"></div>
+    <div class="bg-glow bg-glow-2"></div>
+    <div class="bg-particles" id="particles-js"></div>
+
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">
+                <span class="logo-text">DARECAGAMES</span>
+            </a>
+            
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active-link" data-i18n="menu_home">Inicio</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link" data-i18n="menu_about">Sobre Mí</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#games" class="nav__link" data-i18n="menu_games">Juegos</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#contact" class="nav__link" data-i18n="menu_contact">Contacto</a>
+                    </li>
+                </ul>
+                <div class="nav__close" id="nav-close">
+                    <i class='bx bx-x'></i>
+                </div>
+            </div>
+
+            <div class="nav__actions">
+                <!-- Language Selector -->
+                <div class="lang-selector">
+                    <button class="lang-btn active" data-lang="es">ES</button>
+                    <span class="lang-divider">|</span>
+                    <button class="lang-btn" data-lang="en">EN</button>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main">
+        <!-- HERO SECTION -->
+        <section class="hero section" id="home">
+            <div class="hero__container container grid">
+                <div class="hero__data">
+                    <div class="hero__logo-wrapper slide-in-bottom">
+                        <img src="logos/darecagameslogo4_sin_fondo.png" alt="Dareca Games Logo" class="hero__logo" id="hero-logo">
+                    </div>
+                    <h1 class="hero__title slide-in-bottom delay-1" data-i18n="slogan">
+                        Un desarrollador, infinitas posibilidades.
+                    </h1>
+                    <div class="hero__buttons slide-in-bottom delay-2">
+                        <a href="#games" class="button button--primary" data-i18n="btn_view_games">
+                            Ver Juegos <i class='bx bx-right-arrow-alt'></i>
+                        </a>
+                        <a href="#about" class="button button--ghost" data-i18n="btn_learn_more">
+                            Conoce Más
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Scroll Indicator -->
+            <div class="scroll-indicator">
+                <div class="mouse"></div>
+            </div>
+        </section>
+
+        <!-- ABOUT SECTION -->
+        <section class="about section" id="about">
+            <div class="about__container container grid">
+                <div class="about__data feature-card reveal">
+                    <h2 class="section__title" data-i18n="about_title">Sobre el Estudio</h2>
+                    <p class="about__description" data-i18n="about_text">
+                        Soy un desarrollador independiente dedicado a dar vida a mis propias ideas. Dareca Games es mi cuartel general, donde diseño, programo y experimento con mecánicas para crear experiencias únicas. Mi objetivo es hacer los juegos que a mí me gustaría jugar.
+                    </p>
+                    <div class="about__stats grid">
+                        <div class="stat__item">
+                            <i class='bx bx-code-alt'></i>
+                            <h3 data-i18n="stat_code">100% Código</h3>
+                        </div>
+                        <div class="stat__item">
+                            <i class='bx bx-coffee'></i>
+                            <h3 data-i18n="stat_indie">Indie Dev</h3>
+                        </div>
+                        <div class="stat__item">
+                            <i class='bx bx-joystick'></i>
+                            <h3 data-i18n="stat_passion">Pasión</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- GAMES SECTION -->
+        <section class="games section" id="games">
+            <h2 class="section__title title-center reveal" data-i18n="games_title">Nuestros Juegos</h2>
+            
+            <div class="games__container container">
+                <div class="game__card feature-card reveal">
+                    <div class="game__header">
+                        <h3 class="game__title">Slimevolution</h3>
+                        <span class="game__badge pulse" data-i18n="game_status">Coming Soon</span>
+                    </div>
+
+                    <div class="carousel">
+                        <div class="carousel__inner">
+                            <div class="carousel__item active">
+                                <img src="refs/escena1.png" alt="Slimevolution Scene 1">
+                            </div>
+                            <div class="carousel__item">
+                                <img src="refs/escena2.png" alt="Slimevolution Scene 2">
+                            </div>
+                            <div class="carousel__item">
+                                <img src="refs/escena3.png" alt="Slimevolution Scene 3">
+                            </div>
+                            <div class="carousel__item">
+                                <img src="refs/escena4.png" alt="Slimevolution Scene 4">
+                            </div>
+                            <div class="carousel__item">
+                                <img src="refs/escena_cementerio.png" alt="Slimevolution Scene 5">
+                            </div>
+                            <div class="carousel__item">
+                                <img src="refs/escena_entrada_castillo_gemini.png" alt="Slimevolution Scene 6">
+                            </div>
+                            <div class="carousel__item">
+                                <img src="refs/escena_poblado_gemini.png" alt="Slimevolution Scene 7">
+                            </div>
+                        </div>
+                        <button class="carousel__btn prev"><i class='bx bx-chevron-left'></i></button>
+                        <button class="carousel__btn next"><i class='bx bx-chevron-right'></i></button>
+                        <div class="carousel__indicators"></div>
+                    </div>
+
+                    <div class="game__footer">
+                        <a href="https://store.steampowered.com/" target="_blank" class="button button--steam">
+                            <i class='bx bxl-steam'></i> <span data-i18n="btn_steam">Añadir a Wishlist en Steam</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT SECTION -->
+        <section class="contact section" id="contact">
+            <div class="contact__container container grid">
+                <div class="contact__content feature-card reveal">
+                    <h2 class="section__title" data-i18n="contact_title">Contacto</h2>
+                    <p class="contact__description" data-i18n="contact_subtitle">
+                        ¿Interesado en lo que hacemos? Suscríbete a nuestra newsletter para enterarte de todas las novedades, o envíanos un email.
+                    </p>
+                    
+                    <a href="mailto:darecagames@gmail.com" class="contact__email">
+                        <i class='bx bx-envelope'></i> darecagames@gmail.com
+                    </a>
+
+                    <form class="contact__form" id="newsletter-form" onsubmit="event.preventDefault();">
+                        <div class="form__group">
+                            <input type="email" class="form__input" placeholder="Tu Email" required data-i18n-prop="placeholder" data-i18n="form_placeholder">
+                            <button type="submit" class="button button--primary form__btn">
+                                <span data-i18n="btn_subscribe">Suscribirse</span>
+                                <i class='bx bx-send'></i>
+                            </button>
+                        </div>
+                        <p class="form__message" id="form-msg"></p>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__container container">
+            <span class="footer__copy">
+                &#169; <span id="year"></span> Dareca Games. <span data-i18n="footer_rights">Todos los derechos reservados.</span>
+            </span>
+            <div class="footer__social">
+                <a href="https://x.com/DarecaGames" target="_blank" rel="noopener noreferrer" class="footer__social-link">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                </a>
+                <a href="#" class="footer__social-link"><i class='bx bxl-youtube'></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <!-- Particles.js for background effects -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
