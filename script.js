@@ -245,27 +245,32 @@ reveal(); // Trigger on load
 /* ==================== SET CURRENT YEAR ==================== */
 document.getElementById('year').textContent = new Date().getFullYear();
 
-/* ==================== NEWSLETTER FORM MOCK ==================== */
+/* ==================== NEWSLETTER FORM ==================== */
 const form = document.getElementById('newsletter-form');
 const formMsg = document.getElementById('form-msg');
 
 if (form) {
-    form.addEventListener('submit', (e) => {
-        e.preventDefault();
+    form.addEventListener('submit', () => {
         const currentLang = document.querySelector('.lang-btn.active').getAttribute('data-lang');
         if (currentLang === 'es') {
-            formMsg.textContent = "¡Gracias por suscribirte!";
+            formMsg.textContent = "Enviando...";
         } else {
-            formMsg.textContent = "Thank you for subscribing!";
+            formMsg.textContent = "Sending...";
         }
-        formMsg.className = "form__message msg-success";
-        form.reset();
-        
-        setTimeout(() => {
-            formMsg.textContent = "";
-        }, 5000);
+        formMsg.className = "form__message";
     });
 }
+
+window.ml_webform_success_41945949 = function() {
+    const currentLang = document.querySelector('.lang-btn.active').getAttribute('data-lang');
+    if (currentLang === 'es') {
+        formMsg.textContent = "¡Gracias por suscribirte!";
+    } else {
+        formMsg.textContent = "Thank you for subscribing!";
+    }
+    formMsg.className = "form__message msg-success";
+    form.reset();
+};
 
 /* ==================== PARTICLES JS CONFIG ==================== */
 // Initialize particles.js if it exists

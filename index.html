@@ -175,16 +175,20 @@
                         <i class='bx bx-envelope'></i> contact@darecagames.com
                     </a>
 
-                    <form class="contact__form" id="newsletter-form" onsubmit="event.preventDefault();">
-                        <div class="form__group">
-                            <input type="email" class="form__input" placeholder="Tu Email" required data-i18n-prop="placeholder" data-i18n="form_placeholder">
-                            <button type="submit" class="button button--primary form__btn">
-                                <span data-i18n="btn_subscribe">Suscribirse</span>
-                                <i class='bx bx-send'></i>
-                            </button>
-                        </div>
-                        <p class="form__message" id="form-msg"></p>
-                    </form>
+                    <div id="mlb2-41945949" class="ml-form-embedContainer ml-subscribe-form ml-subscribe-form-41945949">
+                        <form class="contact__form ml-block-form row-form" id="newsletter-form" action="https://assets.mailerlite.com/jsonp/2389672/forms/188819179145528582/subscribe" method="post" target="_blank">
+                            <div class="form__group">
+                                <input type="email" class="form__input" name="fields[email]" placeholder="Tu Email" autocomplete="email" aria-label="email" aria-required="true" required data-i18n-prop="placeholder" data-i18n="form_placeholder">
+                                <button type="submit" class="button button--primary form__btn">
+                                    <span data-i18n="btn_subscribe">Suscribirse</span>
+                                    <i class='bx bx-send'></i>
+                                </button>
+                            </div>
+                            <input type="hidden" name="ml-submit" value="1">
+                            <input type="hidden" name="anticsrf" value="true">
+                            <p class="form__message" id="form-msg" aria-live="polite"></p>
+                        </form>
+                    </div>
                 </div>
             </div>
         </section>
@@ -195,7 +199,7 @@
             <span class="footer__copy">
                 &#169; <span id="year"></span> Dareca Games. <span data-i18n="footer_rights">Todos los derechos reservados.</span>
             </span>
-            <span class="footer__version">v0.7</span>
+            <span class="footer__version">v0.8</span>
             <div class="footer__social">
                 <a href="https://x.com/DarecaGames" target="_blank" rel="noopener noreferrer" class="footer__social-link">
                     <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
@@ -209,5 +213,9 @@
     <!-- Particles.js for background effects -->
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script src="script.js"></script>
+    <script src="https://groot.mailerlite.com/js/w/webforms.min.js?vb397d78ebaa8a0f631d35384c46d781b" type="text/javascript"></script>
+    <script>
+        fetch("https://assets.mailerlite.com/jsonp/2389672/forms/188819179145528582/takel");
+    </script>
 </body>
 </html>
