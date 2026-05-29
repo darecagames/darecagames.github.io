@@ -17,7 +17,7 @@ const translations = {
         "game_status": "Próximamente",
         "btn_steam": "Añadir a Wishlist en Steam",
         "contact_title": "Contacto",
-        "contact_subtitle": "¿Interesado en lo que hacemos? Suscríbete a nuestra newsletter para enterarte de todas las novedades, o envíanos un email.",
+        "contact_subtitle": "¿Interesado en el proyecto? Suscríbete a la newsletter para enterarte de las novedades, o envíame un email.",
         "form_placeholder": "Tu Email",
         "btn_subscribe": "Suscribirse",
         "footer_rights": "Todos los derechos reservados."
@@ -39,7 +39,7 @@ const translations = {
         "game_status": "Coming Soon",
         "btn_steam": "Add to Wishlist on Steam",
         "contact_title": "Contact",
-        "contact_subtitle": "Interested in what we do? Subscribe to our newsletter to hear about all the news, or send us an email.",
+        "contact_subtitle": "Interested in the project? Subscribe to the newsletter to hear the latest news, or send me an email.",
         "form_placeholder": "Your Email",
         "btn_subscribe": "Subscribe",
         "footer_rights": "All rights reserved."
