@@ -17,9 +17,10 @@ const translations = {
         "game_status": "Próximamente",
         "btn_steam": "Coming Soon",
         "contact_title": "Contacto",
-        "contact_subtitle": "¿Quieres seguir mis próximos juegos y novedades? Suscríbete a la newsletter o escríbeme directamente por email.",
+        "contact_subtitle": "¿Quieres seguir mis próximos juegos y novedades? Suscríbete a la newsletter o escríbeme directamente por email*.",
         "form_placeholder": "Tu Email",
         "btn_subscribe": "Suscribirse",
+        "form_unsubscribe_note": "* Podrás darte de baja en cualquier momento.",
         "footer_rights": "Todos los derechos reservados."
     },
     en: {
@@ -39,9 +40,10 @@ const translations = {
         "game_status": "Coming Soon",
         "btn_steam": "Coming Soon",
         "contact_title": "Contact",
-        "contact_subtitle": "Want to follow my next games and updates? Subscribe to the newsletter or email me directly.",
+        "contact_subtitle": "Want to follow my next games and updates? Subscribe to the newsletter or email me directly*.",
         "form_placeholder": "Your Email",
         "btn_subscribe": "Subscribe",
+        "form_unsubscribe_note": "* You can unsubscribe at any time.",
         "footer_rights": "All rights reserved."
     }
 };
