@@ -3,17 +3,17 @@ const translations = {
     es: {
         "menu_home": "Inicio",
         "menu_about": "Sobre Mí",
-        "menu_games": "Juegos",
+        "menu_games": "Juego",
         "menu_contact": "Contacto",
         "slogan": "Un desarrollador, infinitas posibilidades.",
-        "btn_view_games": "Ver Juegos <i class='bx bx-right-arrow-alt'></i>",
+        "btn_view_games": "Ver Juego <i class='bx bx-right-arrow-alt'></i>",
         "btn_learn_more": "Conoce Más",
         "about_title": "Sobre Mí",
         "about_text": "Soy un desarrollador independiente dedicado a dar vida a mis propias ideas. Dareca Games es mi cuartel general, donde diseño, programo y experimento con mecánicas para crear experiencias únicas. Mi objetivo es hacer juegos a los que a mí me gustaría jugar.",
         "stat_code": "100% Código",
         "stat_indie": "Indie Dev",
         "stat_passion": "Pasión",
-        "games_title": "Juegos",
+        "games_title": "Mi Juego",
         "game_status": "Próximamente",
         "btn_steam": "Añadir a Wishlist en Steam",
         "contact_title": "Contacto",
@@ -25,17 +25,17 @@ const translations = {
     en: {
         "menu_home": "Home",
         "menu_about": "About",
-        "menu_games": "Games",
+        "menu_games": "Game",
         "menu_contact": "Contact",
         "slogan": "One developer, infinite possibilities.",
-        "btn_view_games": "View Games <i class='bx bx-right-arrow-alt'></i>",
+        "btn_view_games": "View Game <i class='bx bx-right-arrow-alt'></i>",
         "btn_learn_more": "Learn More",
         "about_title": "About Me",
         "about_text": "I am an independent developer dedicated to bringing my own ideas to life. Dareca Games is my headquarters, where I design, code, and experiment with mechanics to create unique experiences. My goal is to make the games I would like to play.",
         "stat_code": "100% Code",
         "stat_indie": "Indie Dev",
         "stat_passion": "Passion",
-        "games_title": "Games",
+        "games_title": "My Game",
         "game_status": "Coming Soon",
         "btn_steam": "Add to Wishlist on Steam",
         "contact_title": "Contact",
@@ -253,7 +253,11 @@ if (form) {
     form.addEventListener('submit', (e) => {
         e.preventDefault();
         const currentLang = document.querySelector('.lang-btn.active').getAttribute('data-lang');
-        formMsg.textContent = currentLang === 'es' ? "¡Gracias por suscribirte!" : "Thank you for subscribing!";
+        if (currentLang === 'es') {
+            formMsg.textContent = "¡Gracias por suscribirte!";
+        } else {
+            formMsg.textContent = "Thank you for subscribing!";
+        }
         formMsg.className = "form__message msg-success";
         form.reset();
         
